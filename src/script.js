@@ -11,5 +11,13 @@ const month = currentDate.getMonth();
 const day = currentDate.getDate();
 const year = currentDate.getFullYear();
 
+//Array of Month names
+const nameMonths = ['January','Feburary','March','April','May','June',
+'July','August','Septmeber','October','November','December']
 
-console.log("HELLO");
+//Format today date as Month day, year
+const todayDate = nameMonths[month] + " " + day + "," + year;
+
+document.getElementById('todayDate').innerHTML = todayDate;
+
+//console.log("HELLO");
