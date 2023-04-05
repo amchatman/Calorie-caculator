@@ -6,9 +6,10 @@
    */
 
 //Get current Month, Date, and Year
+const currentDate = new Date();
 const month = currentDate.getMonth();
-const date = currentDate.getDate();
-const year = currentDate.getYear();
+const day = currentDate.getDate();
+const year = currentDate.getFullYear();
 
-const nameMonth = ['January','Feburary','March','April','May','June'
-,'July','August','September','November','December']
+
+console.log("HELLO");
