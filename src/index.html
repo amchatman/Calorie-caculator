@@ -25,12 +25,19 @@
             <!--Input list -->
             <span>+ Add New Meal</span>
             <form action="#" class="p-3">
-                <input class="border-b-2 border-black" type="text" name="name" placeholder="Description">
-                <input class="border-b-2 border-black" type="number" name="calories" placeholder="Calories">
-                <input class="border-b-2 border-black" type="number" name="carbs" placeholder="Carbs">
-                <input class="border-b-2 border-black"type="number" name="protein" placeholder="Protein">
-                <input class="border-b-2 border-black" type="number" name="fats" placeholder="Fats">
-                <button>Add Meal</button>
+                <input class="border-b-2 border-black" type="text" name="name" placeholder="Description"/><br>
+                <input class="border-b-2 border-black" type="number" name="calories"min="0" placeholder="Calories"/><br>
+
+                <label for="carbs">Carbs(g)</label>
+                <input class="border-b-2 border-black" type="number" name="carbs"min="0" placeholder="0"/><br>
+
+                <label for="protein">Protein(g)</label>
+                <input class="border-b-2 border-black"type="number" name="protein"min="0" placeholder="0"/><br>
+
+                <label for="fats">Fats(g)</label>
+                <input class="border-b-2 border-black" type="number" name="fats"min=0 placeholder="0"/><br>
+
+                <input type="submit" value="Add Meal"/>
             </form>
         </div>
 
