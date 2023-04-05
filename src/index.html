@@ -21,23 +21,30 @@
             <!--Add list goes here-->
         </div>
 
-        <div class="mt-0 mx-auto p-5">
+        <div class="m-5 p-2 bg-zinc-500 border-2 border-rose-500 rounded-md">
             <!--Input list -->
             <span>+ Add New Meal</span>
             <form action="#" class="p-3">
-                <input class="border-b-2 border-black" type="text" name="name" placeholder="Description"/><br>
-                <input class="border-b-2 border-black" type="number" name="calories"min="0" placeholder="Calories"/><br>
-
-                <label for="carbs">Carbs(g)</label>
-                <input class="border-b-2 border-black" type="number" name="carbs"min="0" placeholder="0"/><br>
-
-                <label for="protein">Protein(g)</label>
-                <input class="border-b-2 border-black"type="number" name="protein"min="0" placeholder="0"/><br>
-
-                <label for="fats">Fats(g)</label>
-                <input class="border-b-2 border-black" type="number" name="fats"min=0 placeholder="0"/><br>
-
-                <input type="submit" value="Add Meal"/>
+                <div class="my-2.5">
+                    <label for="name" class="block float-left w-28">Description</label>
+                    <input type="text" name="name" class="clear-both"/>
+                </div>
+                <div class="my-2.5">
+                    <label for="calories" class="block float-left w-28">Calories</label>
+                    <input type="number" name="calories" class="clear-both"/> 
+                </div>
+                <div class="my-2.5">
+                    <label for="carbs" class="block float-left w-28">Carbs (g)</label>
+                    <input type="number" name="carbs" class="clear-both"/> 
+                </div>
+                <div class="my-2.5">
+                    <label for="protein" class="block float-left w-28">Protein (g)</label>
+                    <input type="number" name="protein" class="clear-both"/> 
+                </div>
+                <div class="my-2.5">
+                    <label for="fats" class="block float-left w-28">Fats (g)</label>
+                    <input type="number" name="fats" class="clear-both"/> 
+                </div>
             </form>
         </div>
 
