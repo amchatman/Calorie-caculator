@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-   <header>
-        <h1>Calorie Counter</h1>
-        <p id="date">April 4, 2023</p>
+   <header class="m-5">
+        <h1 class="text-center text-2xl">Calorie Counter</h1>
+        <p id="date" class="text-center">April 4, 2023</p>
    </header>
    <main>
         <div>
@@ -21,15 +21,16 @@
             <!--Add list goes here-->
         </div>
 
-        <div>
+        <div class="mt-0 mx-auto p-5">
             <!--Input list -->
             <span>+ Add New Meal</span>
-            <form action="#">
-                <input type="text" placeholder="Description">
-                <input type="number" placeholder="Calories">
-                <input type="number" placeholder="Carbs">
-                <input type="number" placeholder="Protein">
-                <input type="number" placeholder="Fats">
+            <form action="#" class="p-3">
+                <input class="border-b-2 border-black" type="text" name="name" placeholder="Description">
+                <input class="border-b-2 border-black" type="number" name="calories" placeholder="Calories">
+                <input class="border-b-2 border-black" type="number" name="carbs" placeholder="Carbs">
+                <input class="border-b-2 border-black"type="number" name="protein" placeholder="Protein">
+                <input class="border-b-2 border-black" type="number" name="fats" placeholder="Fats">
+                <button>Add Meal</button>
             </form>
         </div>
 
