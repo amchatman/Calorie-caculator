@@ -22,7 +22,7 @@ document.getElementById('todayDate').innerHTML = todayDate;
 
 //Create a dropdown menu
 function dropDownMenu(){
-   const dropdownForm = document.getElementById('dropDownForm');
+   const dropdownForm = document.getElementById('calorieForm');
 
    if (dropdownForm.style.display === "none") {
      dropdownForm.style.display = "block";
@@ -30,5 +30,5 @@ function dropDownMenu(){
      dropdownForm.style.display = "none";
    }
  } 
- 
+
 //console.log("HELLO");
