@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontFamily:{
+      display:["Roboto Mono", "monospace"]
+    },
     extend: {},
   },
   plugins: [],
