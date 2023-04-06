@@ -20,4 +20,15 @@ const todayDate = nameMonths[month] + " " + day + "," + year;
 
 document.getElementById('todayDate').innerHTML = todayDate;
 
+//Create a dropdown menu
+function dropDownMenu(){
+   const dropdownForm = document.getElementById('dropDownForm');
+
+   if (dropdownForm.style.display === "none") {
+     dropdownForm.style.display = "block";
+   } else {
+     dropdownForm.style.display = "none";
+   }
+ } 
+ 
 //console.log("HELLO");
