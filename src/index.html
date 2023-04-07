@@ -20,7 +20,7 @@
            <!--Graph Div goes Here--> 
         </div>
 
-        <div class="m-5 p-2 border-2 rounded-md bg-deeppurple">
+        <section class="m-5 p-2 border-2 rounded-md">
             <!--Input list -->
             <button onclick="dropDownMenu()">+ Add Meal</button>
             <form action="#"id="calorieForm" class="p-3 hidden">
@@ -48,21 +48,25 @@
                     <input type="submit" value="Add Meal" id="submitMeal" class="bg-indigo-500 rounded p-1"/>
                 </div>
             </form>
-        </div>
+        </section>
 
-        <section>
-            <h2>Meals</h2>
-            
-            <div id="meal-entry">
+        <section class="m-5 p-2 border-2 rounded-md">
+            <div class="flex text-sm">
                 <input type="text" value="Cookies"/>
-                <input type="number" value="100">
-                <input type="number" value="20">
-                <input type="number" value="25">
-                <input type="number" value="30"
             </div>
-            <div>
-                <button>Edit</button>
-                <button>Delete</button>
+            <div class="text-xs">
+                <label for="calorieOutput">Calories</label>
+                <input type="numbers" name="calorieOutput" value="100"/>
+
+                <label for="carbOutput">Carbs</label>
+                <input type="numbers" name="carbOutput" value="10" class="text-sm"/>
+
+                <label for="proteinOutput">Protein</label>
+                <input type="numbers" name="proteinOutput" value="20" class="text-sm"/>
+                
+                <label for="fatsOutput">Protein</label>
+                <input type="numbers" name="fatsOutput" value="10" class="text-sm"/>
+                
             </div>
         </section>
 
