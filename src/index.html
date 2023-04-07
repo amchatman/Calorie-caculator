@@ -23,7 +23,7 @@
         <section class="m-5 p-2 border-2 rounded-md">
             <!--Input list -->
             <button onclick="dropDownMenu()">+ Add Meal</button>
-            <form action="#"id="calorieForm" class="p-3 hidden">
+            <form id="calorieForm" class="p-3 hidden">
                 <div class="my-2.5">
                     <label for="name" class="block float-left w-28">Description</label>
                     <input type="text" name="name" placeholder="Name" id="description" class="clear-both"/>
@@ -57,18 +57,27 @@
                     <input type="text" value="Cookies"/>
                 </div>
                 <div class="text-xs">
-                    <label for="calorieOutput">Calories</label>
-                    <input type="numbers" name="calorieOutput" value="100"/>
+                    <div>
+                        <label for="calorieOutput">Calories</label>
+                        <input type="numbers" name="calorieOutput" value="100"/>
+                    </div>
 
-                    <label for="carbOutput">Carbs</label>
-                    <input type="numbers" name="carbOutput" value="10" class="text-sm"/>
-
-                    <label for="proteinOutput">Protein</label>
-                    <input type="numbers" name="proteinOutput" value="20" class="text-sm"/>
-                    
-                    <label for="fatsOutput">Protein</label>
-                    <input type="numbers" name="fatsOutput" value="10" class="text-sm"/>
-                    
+                    <div>
+                        <label for="carbOutput">Carbs</label>
+                        <input type="numbers" name="carbOutput" value="10" class="text-sm"/>
+                    </div>
+                    <div>
+                        <label for="proteinOutput">Protein</label>
+                        <input type="numbers" name="proteinOutput" value="20" class="text-sm"/>
+                    </div>
+                    <div>
+                        <label for="fatsOutput">Fats</label>
+                        <input type="numbers" name="fatsOutput" value="10" class="text-sm"/>
+                    </div>
+                    <div>
+                        <button class="bg-indigo-500 rounded p-1">Edit</button>
+                        <button class="bg-indigo-500 rounded p-1">Delete</button>
+                    </div>
                 </div>
             </div>
         </section>
