@@ -36,10 +36,28 @@ function dropDownMenu(){
 //Form loader
 window.addEventListener('load',() => {
   const calorieForm = document.querySelector("#calorieForm");
+  const inputDescription = document.querySelector("#description")
   const inputCalories = document.querySelector("#calories");
   const inputCarbs = document.querySelector("#carbs");
   const inputProtein = document.querySelector("#protein");
   const inputFats = document.querySelector("#fats");
   const mealList = document.querySelector("#meal-list");
 
+   calorieForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const descriptionValue = inputDescription.value;
+      const calorieValue = inputCalories.value;
+      const carbsValue = inputCarbs.value;
+      const proteinValue = inputProtein.value;
+      const fatsValue = inputFats.value;
+    
+      //Checks to see if there value in the input
+      if(!descriptionValue || !calorieValue || !carbsValue || !proteinValue || !fatsValue){
+        alert("Please feel out the info below");
+      }else{
+        console.log("Succes");
+      }
+
+   })
 })
