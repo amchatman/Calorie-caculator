@@ -60,13 +60,32 @@ window.addEventListener('load',() => {
       }
       //Createing Element with DOM
       const meal_Container = document.createElement("div");
-      meal_Container.classList.add("meal-container");
+        meal_Container.classList.add("meal-container");
 
       const description_Content = document.createElement("div");
-      description_Content.classList.add("description");
-      description_Content.innerText = descriptionValue;
+        description_Content.classList.add("description");
+        description_Content.innerText = descriptionValue;
 
+      const unorder_List = document.createElement("ul");
+        const calorie_List = document.createElement("li");
+          calorie_List.innerText = calorieValue;
+
+        const carbs_List = document.createElement("li");
+          carbs_List.innerText = carbsValue;
+
+        const protein_List = document.createElement("li");
+          protein_List.innerText = proteinValue;
+
+        const fats_List = document.createElement("li");
+          fats_List.innerText = fatsValue;
+
+      //Append Unorder List, List, and Div
+      description_Content.append(unorder_List);
       meal_Container.appendChild(description_Content);
+      unorder_List.appendChild(calorie_List);
+      unorder_List.appendChild(carbs_List);
+      unorder_List.appendChild(protein_List);
+      unorder_List.appendChild(fats_List);
       mealList.appendChild(meal_Container);
 
    })
