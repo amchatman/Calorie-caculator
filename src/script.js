@@ -58,6 +58,16 @@ window.addEventListener('load',() => {
       }else{
         console.log("Succes");
       }
+      //Createing Element with DOM
+      const meal_Container = document.createElement("div");
+      meal_Container.classList.add("meal-container");
+
+      const description_Content = document.createElement("div");
+      description_Content.classList.add("description");
+      description_Content.innerText = descriptionValue;
+
+      meal_Container.appendChild(description_Content);
+      mealList.appendChild(meal_Container);
 
    })
 })
