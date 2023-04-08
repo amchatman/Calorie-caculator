@@ -36,5 +36,10 @@ function dropDownMenu(){
 //Form loader
 window.addEventListener('load',() => {
   const calorieForm = document.querySelector("#calorieForm");
-  const inputCalories = document.querySelector("calories");
+  const inputCalories = document.querySelector("#calories");
+  const inputCarbs = document.querySelector("#carbs");
+  const inputProtein = document.querySelector("#protein");
+  const inputFats = document.querySelector("#fats");
+  const mealList = document.querySelector("#meal-list");
+
 })
