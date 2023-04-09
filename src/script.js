@@ -67,38 +67,33 @@ window.addEventListener('load',() => {
         description_Content.innerText = descriptionValue;
 
       const unorder_List = document.createElement("ul");
-        const calorie_List = document.createElement("li");
-          calorie_List.innerText = calorieValue;
-          unorder_List.appendChild(calorie_List);
+      const calorie_List = document.createElement("li");
+      calorie_List.innerText = calorieValue;
+       unorder_List.appendChild(calorie_List);
 
-        const carbs_List = document.createElement("li");
-          carbs_List.innerText = carbsValue;
-          unorder_List.appendChild(carbs_List);
+      const carbs_List = document.createElement("li");
+      carbs_List.innerText = carbsValue;
+      unorder_List.appendChild(carbs_List);
 
-        const protein_List = document.createElement("li");
-          protein_List.innerText = proteinValue;
-          unorder_List.appendChild(protein_List);
+      const protein_List = document.createElement("li");
+      protein_List.innerText = proteinValue;
+      unorder_List.appendChild(protein_List);
 
-        const fats_List = document.createElement("li");
-          fats_List.innerText = fatsValue;
-          unorder_List.appendChild(fats_List);
+      const fats_List = document.createElement("li");
+      fats_List.innerText = fatsValue;
+      unorder_List.appendChild(fats_List);
 
-        //Buttons
-        const  button_container =  document.createElement("div");
-          button_container.classList.add("button-container");
+      //Buttons
+      const  button_container =  document.createElement("div");
+      button_container.classList.add("button-container");
 
-          const edit_Button = document.createElement("button");
-            edit_Button.innerHTML = "Edit";
-            button_container.appendChild(edit_Button);
-            description_Content.appendChild(edit_Button);
+      const delete_Button = document.createElement("button");
+      delete_Button.innerHTML = "Delete";
+      button_container.appendChild(delete_Button);
+      description_Content.appendChild(delete_Button);
 
-          const delete_Button = document.createElement("button");
-            delete_Button.innerHTML = "Delete";
-            button_container.appendChild(delete_Button);
-            description_Content.appendChild(delete_Button);
-
-        description_Content.appendChild(unorder_List);
-        meal_Container.appendChild(description_Content); 
-        mealList.appendChild(meal_Container);
-   })
-})
+      description_Content.appendChild(unorder_List);
+      meal_Container.appendChild(description_Content); 
+      mealList.appendChild(meal_Container);
+   });
+});
