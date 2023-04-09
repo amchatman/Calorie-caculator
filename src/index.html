@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Calorie Counter</title>
 </head>
-<body class="font-display">
+<body class="font-display bg-slate-950 text-white">
    <header class="m-5">
-        <h1 class="text-center text-2xl">Calorie Counter</h1>
+        <h1 class="text-center text-2xl bg-gradient-to-r from-gray-50 via-indigo-600  to-emerald-400 text-transparent bg-clip-text">Calorie Counter</h1>
         <p id="todayDate" class="text-center"></p>
    </header>
    <main>
@@ -20,7 +20,7 @@
            <!--Graph Div goes Here--> 
         </div>
 
-        <section class="m-5 p-2 border-2 rounded-md">
+        <section class="m-5 p-2 rounded bg-gray-300 bg-opacity-20">
             <!--Input list -->
             <button onclick="dropDownMenu()">+ Add Meal</button>
             <form id="calorieForm" class="p-3 hidden">
@@ -50,7 +50,7 @@
             </form>
         </section>
 
-        <section id="meal-list"class="m-5 p-2 border-2 rounded-md">
+        <section id="meal-list"class="m-5 p-2 rounded bg-gray-300 bg-opacity-20">
             <button>+ Meal List</button>
             <!--Test form
             <div class="p-2 border-2 rounded-md">
