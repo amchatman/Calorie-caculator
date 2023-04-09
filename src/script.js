@@ -95,5 +95,9 @@ window.addEventListener('load',() => {
       description_Content.appendChild(unorder_List);
       meal_Container.appendChild(description_Content); 
       mealList.appendChild(meal_Container);
+
+      delete_Button.addEventListener('click',(e)=>{
+        mealList.removeChild(meal_Container);
+      })
    });
 });
