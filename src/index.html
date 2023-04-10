@@ -10,42 +10,42 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Calorie Counter</title>
 </head>
-<body class="font-display bg-black text-slate-400">
+<body class="font-display bg-black text-white">
    <header class="m-5">
         <h1 class="text-center text-2xl bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Calorie Counter</h1>
-        <p id="todayDate" class="text-center"></p>
+        <p id="todayDate" class="text-center text-white"></p>
    </header>
    <main>
         <div>
            <!--Graph Div goes Here--> 
         </div>
-
+        <hr class="p-2 w-9/12 mt-0 mb-auto mx-auto">
         <section class="m-5 p-2 rounded">
             <!--Input list -->
-            <button onclick="dropDownMenu()" class="text-white">Add Meal</button>
-            <form id="calorieForm" class="p-3 hidden">
+            <button onclick="dropDownMenu()" class="text-white border-2 px-2 py-1">Add Meal</button>
+            <form id="calorieForm" class="p-3 border-2 mt-3 hidden">
                 <div class="my-2.5">
-                    <label for="name" class="block float-left w-28">Description</label>
-                    <input type="text" name="name" placeholder="Name" id="description" class="clear-both rounded pl-2 bg-gray-600"/>
+                    <label for="name" class="block float-left w-28 text-sm">Description</label>
+                    <input type="text" name="name" placeholder="Name" id="description" class="clear-both"/>
                 </div>
                 <div class="my-2.5">
-                    <label for="calories" class="block float-left w-28">Calories</label>
+                    <label for="calories" class="block float-left w-28 text-sm">Calories</label>
                     <input type="number" name="calories" placeholder="0" min="0" id="calories" class="clear-both"/> 
                 </div>
                 <div class="my-2.5">
-                    <label for="carbs" class="block float-left w-28">Carbs (g)</label>
+                    <label for="carbs" class="block float-left w-28 text-sm">Carbs (g)</label>
                     <input type="number" name="carbs" placeholder="0" id="carbs" min="0" class="clear-both"/> 
                 </div>
                 <div class="my-2.5">
-                    <label for="protein" class="block float-left w-28">Protein (g)</label>
+                    <label for="protein" class="block float-left w-28 text-sm">Protein (g)</label>
                     <input type="number" name="protein" placeholder="0" id="protein" min="0" class="clear-both"/> 
                 </div>
                 <div class="my-2.5">
-                    <label for="fats" class="block float-left w-28">Fats (g)</label>
+                    <label for="fats" class="block float-left w-28 text-sm">Fats (g)</label>
                     <input type="number" name="fats" placeholder="0" min="0" id="fats" class="clear-both"/> 
                 </div>
                 <div>
-                    <input type="submit" value="Add Meal" id="submitMeal" class="bg-cyan-400 rounded-lg p-1"/>
+                    <input type="submit" value="Add Meal" id="submitMeal" class="text-white border-2 px-2 py-1"/>
                 </div>
             </form>
         </section>
