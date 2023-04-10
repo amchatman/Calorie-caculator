@@ -16,10 +16,18 @@
         <p id="todayDate" class="text-center text-white"></p>
    </header>
    <main>
+        <div class="mt-0 mb-auto mx-5 text-sm">
+            <p class="text-sm">
+                Click on the Add Meal button to caculate the amount of calories you consume in a
+                a meal. Enter the meal description,calories,carbs,protein,and fats.
+            </p>
+        </div>
+        
+        <hr class="w-9/12 mt-5 mb-auto mx-auto">
         <div>
            <!--Graph Div goes Here--> 
         </div>
-        <hr class="p-2 w-9/12 mt-0 mb-auto mx-auto">
+       
         <section class="m-5 p-2 rounded">
             <!--Input list -->
             <button onclick="dropDownMenu()" class="text-white border-2 px-2 py-1">Add Meal</button>
@@ -50,8 +58,8 @@
             </form>
         </section>
 
-        <section id="meal-list"class="m-5 p-2 rounded bg-gray-300 bg-opacity-20">
-            <button>+ Meal List</button>
+        <section id="meal-list"class="m-5 p-2">
+            <h1 class="text-xl">Meal List</h1>
         </section>
    </main>
    <script src="script.js"></script>
