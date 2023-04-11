@@ -3,6 +3,7 @@
    3.Get percentage of total for each input base on how items store
    4. Input: Example Description: Name , Protein: 0g, Carbs: 0, Fats: 0
    5. Get Current date Month, date, year 
+   6.Caculate total
    */
 
 //Get current Month, Date, and Year
