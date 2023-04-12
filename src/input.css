@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    li{
+        display:inline-block;
+        margin-right:5px;
+        font-size:14px;
+    }
+}
+@layer utilities{
+    .meal-container{
+        border:2px solid white;
+        padding:8px;
+    }
+}
+
