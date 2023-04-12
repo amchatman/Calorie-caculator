@@ -69,19 +69,19 @@ window.addEventListener('load',() => {
 
       const unorder_List = document.createElement("ul");
       const calorie_List = document.createElement("li");
-      calorie_List.innerText = calorieValue;
+      calorie_List.innerText = `Calories: ${calorieValue}`;
        unorder_List.appendChild(calorie_List);
 
       const carbs_List = document.createElement("li");
-      carbs_List.innerText = carbsValue;
-      unorder_List.appendChild(carbs_List);
+      carbs_List.innerText = `Carbs: ${carbsValue}`;
+        unorder_List.appendChild(carbs_List);
 
       const protein_List = document.createElement("li");
-      protein_List.innerText = proteinValue;
+      protein_List.innerText =`Protein: ${proteinValue}`;
       unorder_List.appendChild(protein_List);
 
       const fats_List = document.createElement("li");
-      fats_List.innerText = fatsValue;
+      fats_List.innerText = `Fats: ${fatsValue}`;
       unorder_List.appendChild(fats_List);
 
       //Buttons
