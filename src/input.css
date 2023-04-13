@@ -10,9 +10,14 @@
     }
 }
 @layer utilities{
+    .meal-list{
+        border:2px solid white;
+    }
     .meal-container{
         border:2px solid white;
         padding:8px;
+        margin-top:5px;
+        margin-bottom:5px;
     }
 }
 
