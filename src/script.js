@@ -102,15 +102,16 @@ window.addEventListener('load',() => {
       })
    });
 });
+//Calorie Counter Chart
 const ctx = document.getElementById('myChart');
 
   new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Carbs','Protein','Fats'],
       datasets: [{
         label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [2,4,9],
         borderWidth: 1
       }]
     },
