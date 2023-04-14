@@ -32,7 +32,28 @@ function dropDownMenu(){
    }
  } 
 
-//console.log("HELLO");
+// Define the chart
+const chartData = {
+  labels: ['Carbs', 'Protein', 'Fats'],
+  datasets: [{
+    label: '# of Votes',
+    data: [0, 0, 0],
+    borderWidth: 1,
+    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+  }]
+};
+const ctx = document.getElementById('myChart');
+const myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: chartData,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
 
 //Form loader
 window.addEventListener('load',() => {
@@ -52,12 +73,14 @@ window.addEventListener('load',() => {
       const carbsValue = inputCarbs.value;
       const proteinValue = inputProtein.value;
       const fatsValue = inputFats.value;
-    
+
       //Checks to see if there value in the input
       if(!descriptionValue || !calorieValue || !carbsValue || !proteinValue || !fatsValue){
         alert("Please feel out the info below");
       }else{
         console.log("Succes");
+        myChart.data.datasets[0].data = [carbsValue, proteinValue, fatsValue];
+        myChart.update();
       }
       //Createing Element with DOM
       const meal_Container = document.createElement("div");
@@ -99,27 +122,9 @@ window.addEventListener('load',() => {
 
       delete_Button.addEventListener('click',(e)=>{
         mealList.removeChild(meal_Container);
-      })
+      });
    });
+   myChart.data = chartData;
+   myChart.update();
 });
-//Calorie Counter Chart
-const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      labels: ['Carbs','Protein','Fats'],
-      datasets: [{
-        label: '# of Votes',
-        data: [2,4,9],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
