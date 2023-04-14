@@ -39,7 +39,7 @@ const chartData = {
     label: '# of Votes',
     data: [0, 0, 0],
     borderWidth: 1,
-    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+    backgroundColor: ['#06b6d4', '#3b82f6', '#fbbf24']
   }]
 };
 const ctx = document.getElementById('myChart');
