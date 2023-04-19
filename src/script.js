@@ -36,7 +36,6 @@ function dropDownMenu(){
      dropdownForm.style.display = "none";
    }
  } 
-
 //Create and define chart
 const chartData = {
   labels: ['Carbs', 'Protein', 'Fats'],
@@ -61,7 +60,6 @@ function updateChartTotal(){
   myChart.data.datasets[0].data = [totalCarbs,totalProtein,totalFats];
   myChart.update();
 }
-
 //Form loader
 window.addEventListener('load',() => {
   const calorieForm = document.querySelector("#calorieForm");
@@ -136,10 +134,19 @@ window.addEventListener('load',() => {
       mealList.appendChild(meal_Container);
 
       delete_Button.addEventListener('click',(e)=>{
+        //Subtracts the from the total from the chart on delete
+        totalCalories -= calorieValue;
+        totalCarbs -= carbsValue;
+        totalProtein -= proteinValue;
+        totalFats -= fatsValue;
+
+        myChart.data.datasets[0].data = [carbsValue, proteinValue, fatsValue];
+        myChart.update();
+        //Remove meal on delete
         mealList.removeChild(meal_Container);
       });
    });
    myChart.data = chartData;
-   myChart.update();
+   myChart.data.datasets[0];
 });
 
