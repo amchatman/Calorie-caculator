@@ -31,6 +31,11 @@ function dropDownMenu(){
      dropdownForm.style.display = "none";
    }
  } 
+//Store current total for each input
+ let totalCalories = 0;
+ let totalCarbs = 0;
+ let totalProtein = 0;
+ let totalFats = 0;
 
 // Define the chart
 const chartData = {
