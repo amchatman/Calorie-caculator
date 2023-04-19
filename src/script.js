@@ -6,6 +6,12 @@
    6.Caculate total
    */
 
+ //Global Variables store current total
+ let totalCalories = 0;
+ let totalCarbs = 0;
+ let totalProtein = 0;
+ let totalFats = 0;
+
 //Get current Month, Date, and Year
 const currentDate = new Date();
 const month = currentDate.getMonth();
@@ -31,11 +37,6 @@ function dropDownMenu(){
      dropdownForm.style.display = "none";
    }
  } 
-//Store current total for each input
- let totalCalories = 0;
- let totalCarbs = 0;
- let totalProtein = 0;
- let totalFats = 0;
 
 // Define the chart
 const chartData = {
