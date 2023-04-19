@@ -24,8 +24,7 @@ const nameMonths = ['January','Feburary','March','April','May','June',
 
 //Format today date as Month day, year
 const todayDate = nameMonths[month] + " " + day + "," + year;
-
-document.getElementById('todayDate').innerHTML = todayDate;
+  document.getElementById('todayDate').innerHTML = todayDate;
 
 //Create a dropdown menu
 function dropDownMenu(){
@@ -38,12 +37,12 @@ function dropDownMenu(){
    }
  } 
 
-// Define the chart
+//Create and define chart
 const chartData = {
   labels: ['Carbs', 'Protein', 'Fats'],
   datasets: [{
-    label: '# of Votes',
-    data: [0, 0, 0],
+    label: 'Total grams',
+    data: [totalCarbs, totalProtein, totalFats],
     borderWidth: 1,
     backgroundColor: ['#06b6d4', '#3b82f6', '#fbbf24']
   }]
@@ -60,6 +59,11 @@ const myChart = new Chart(ctx, {
     }
   }
 });
+//Function that checks and update the total
+function updateChartTotal(){
+  myChart.data.datasets[0].data = [totalCarbs,totalProtein,totalFats];
+  myChart.update();
+}
 
 //Form loader
 window.addEventListener('load',() => {
@@ -75,10 +79,10 @@ window.addEventListener('load',() => {
       e.preventDefault();
 
       const descriptionValue = inputDescription.value;
-      const calorieValue = inputCalories.value;
-      const carbsValue = inputCarbs.value;
-      const proteinValue = inputProtein.value;
-      const fatsValue = inputFats.value;
+      const calorieValue = parseInt(inputCalories.value);
+      const carbsValue = parseInt(inputCarbs.value);
+      const proteinValue = parseInt(inputProtein.value);
+      const fatsValue = parseInt(inputFats.value);
 
       //Checks to see if there value in the input
       if(!descriptionValue || !calorieValue || !carbsValue || !proteinValue || !fatsValue){
@@ -88,6 +92,14 @@ window.addEventListener('load',() => {
         myChart.data.datasets[0].data = [carbsValue, proteinValue, fatsValue];
         myChart.update();
       }
+      // Add the values to the totals
+      totalCalories += calorieValue;
+      totalProtein += proteinValue;
+      totalFats += fatsValue;
+      totalCarbs += carbsValue;
+
+      updateChartTotal();
+
       //Createing Element with DOM
       const meal_Container = document.createElement("div");
         meal_Container.classList.add("meal-container");
