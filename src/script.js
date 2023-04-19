@@ -41,7 +41,7 @@ function dropDownMenu(){
 const chartData = {
   labels: ['Carbs', 'Protein', 'Fats'],
   datasets: [{
-    label: 'Total grams',
+    label: '# grams',
     data: [totalCarbs, totalProtein, totalFats],
     borderWidth: 1,
     backgroundColor: ['#06b6d4', '#3b82f6', '#fbbf24']
@@ -53,9 +53,6 @@ const myChart = new Chart(ctx, {
   data: chartData,
   options: {
     scales: {
-      y: {
-        beginAtZero: true
-      }
     }
   }
 });
@@ -100,7 +97,7 @@ window.addEventListener('load',() => {
 
       updateChartTotal();
 
-      //Createing Element with DOM
+      //Creating Element with DOM
       const meal_Container = document.createElement("div");
         meal_Container.classList.add("meal-container");
 
@@ -125,7 +122,7 @@ window.addEventListener('load',() => {
       fats_List.innerText = `Fats:${fatsValue}`;
       unorder_List.appendChild(fats_List);
 
-      //Buttons
+      //Button container & Delete button
       const  button_container =  document.createElement("div");
       button_container.classList.add("button-container");
 
