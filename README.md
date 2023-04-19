@@ -12,8 +12,9 @@ A calorite a caculator that  caculates the total calories, Carbs, Protiein, and 
 Project was created with the following technolgies...
 - HTML5
 - CSS3
-- TailwindCSS
-- Charts.js
+- JavaScript
+- <a href="https://tailwindcss.com/">TailwindCSS</a>
+- <a href="https://www.chartjs.org/">Charts.js</a> | <a href="https://github.com/chartjs/Chart.js">Chart.js Github</a>
 
 ### Features
-- Chart
+- Caculate total Carbs, Protein, Fats 
