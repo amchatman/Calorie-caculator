@@ -10,14 +10,20 @@
     }
 }
 @layer utilities{
-    .meal-list{
+    .meal-list,.delete-meal,.meal-container{
         border:2px solid white;
     }
     .meal-container{
-        border:2px solid white;
         padding:8px;
         margin-top:5px;
         margin-bottom:5px;
+    }
+    .delete-meal{
+        padding-left:8px;
+        padding-right:8px;
+        padding-top:4px;
+        padding-bottom:4px;
+        float:right;
     }
 }
 

@@ -125,6 +125,7 @@ window.addEventListener('load',() => {
       button_container.classList.add("button-container");
 
       const delete_Button = document.createElement("button");
+      delete_Button.classList.add("delete-meal");
       delete_Button.innerHTML = "Delete";
       button_container.appendChild(delete_Button);
       description_Content.appendChild(delete_Button);
