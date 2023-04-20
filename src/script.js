@@ -38,17 +38,17 @@ function dropDownMenu(){
  } 
 //Create and define chart
 const chartData = {
-  labels: ['Calories','Carbs', 'Protein', 'Fats'],
+  labels: ['Carbs', 'Protein', 'Fats'],
   datasets: [{
     label: '# grams',
-    data: [totalCalories, totalCarbs, totalProtein, totalFats],
+    data: [totalCarbs, totalProtein, totalFats],
     borderWidth: 1,
-    backgroundColor: ['#818cf8','#06b6d4', '#3b82f6', '#fbbf24']
+    backgroundColor: ['#06b6d4', '#3b82f6', '#fbbf24']
   }]
 };
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
-  type: 'doughnut',
+  type: 'pie',
   data: chartData,
   options: {
     scales: {
@@ -57,7 +57,7 @@ const myChart = new Chart(ctx, {
 });
 //Function that checks and update the total
 function updateChartTotal(){
-  myChart.data.datasets[0].data = [totalCalories, totalCarbs, totalProtein, totalFats];
+  myChart.data.datasets[0].data = [totalCarbs, totalProtein, totalFats];
   myChart.update();
 }
 //Form loader
@@ -84,7 +84,7 @@ window.addEventListener('load',() => {
         alert("Please feel out the info below");
       }else{
         console.log("Succes");
-        myChart.data.datasets[0].data = [calorieValue, carbsValue, proteinValue, fatsValue];
+        myChart.data.datasets[0].data = [carbsValue, proteinValue, fatsValue];
         myChart.update();
       }
       // Add the values to the totals
@@ -141,10 +141,12 @@ window.addEventListener('load',() => {
         totalProtein -= proteinValue;
         totalFats -= fatsValue;
 
-        myChart.data.datasets[0].data = [calorieValue, carbsValue, proteinValue, fatsValue];
+        myChart.data.datasets[0].data = [carbsValue, proteinValue, fatsValue];
         myChart.update();
+
         //Remove meal on delete
         mealList.removeChild(meal_Container);
+
       });
    });
    myChart.data = chartData;
