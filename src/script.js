@@ -36,6 +36,7 @@ function dropDownMenu(){
      dropdownForm.style.display = "none";
    }
  } 
+
 //Create and define chart
 const chartData = {
   labels: ['Carbs', 'Protein', 'Fats'],
@@ -55,11 +56,13 @@ const myChart = new Chart(ctx, {
     }
   }
 });
+
 //Function that checks and update the total
 function updateChartTotal(){
   myChart.data.datasets[0].data = [totalCarbs, totalProtein, totalFats];
   myChart.update();
 }
+
 //Form loader
 window.addEventListener('load',() => {
   const calorieForm = document.querySelector("#calorieForm");
@@ -87,14 +90,13 @@ window.addEventListener('load',() => {
         myChart.data.datasets[0].data = [carbsValue, proteinValue, fatsValue];
         myChart.update();
       }
-      // Add the values to the totals
+      //Add the values to the totals
       totalCalories += calorieValue;
       totalProtein += proteinValue;
       totalFats += fatsValue;
       totalCarbs += carbsValue;
-
       updateChartTotal();
-
+      
       //Creating Element with DOM
       const meal_Container = document.createElement("div");
         meal_Container.classList.add("meal-container");
@@ -133,6 +135,7 @@ window.addEventListener('load',() => {
       description_Content.appendChild(unorder_List);
       meal_Container.appendChild(description_Content); 
       mealList.appendChild(meal_Container);
+
 
       delete_Button.addEventListener('click',(e)=>{
         //Subtracts the from the total from the chart on delete
