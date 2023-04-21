@@ -19,3 +19,6 @@ Project was created with the following technolgies...
 ### Features
 - The ability to add or delete meals
 - The ability to track carbs,protein and fats
+
+### Issues
+- Chart does not caculate right total on delete
