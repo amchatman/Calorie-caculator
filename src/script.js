@@ -5,7 +5,6 @@
    5. Get Current date Month, date, year 
    6.Caculate total
    */
-
  //Global Variables store current total
  let totalCalories = 0;
  let totalCarbs = 0;
@@ -38,13 +37,15 @@ function dropDownMenu(){
  } 
 
 //Create and define chart
+Chart.defaults.color = '#FFF';
+
 const chartData = {
   labels: ['Carbs', 'Protein', 'Fats'],
   datasets: [{
     label: '# grams',
     data: [totalCarbs, totalProtein, totalFats],
     borderWidth: 1,
-    backgroundColor: ['#06b6d4', '#3b82f6', '#fbbf24']
+    backgroundColor: ['#06b6d4', '#3b82f6', '#22c55e']
   }]
 };
 const ctx = document.getElementById('myChart');
