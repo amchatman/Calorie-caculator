@@ -10,7 +10,7 @@
     }
 }
 @layer utilities{
-    .meal-list,.delete-meal,.meal-container{
+    .delete-meal,.meal-container{
         border:2px solid white;
     }
     .meal-container{
