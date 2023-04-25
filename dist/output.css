@@ -759,14 +759,15 @@ li{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.delete-meal,.meal-container{
+.delete-meal{
   border:2px solid white;
 }
 
 .meal-container{
   padding:8px;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+  border-left:3px solid white;
 }
 
 .delete-meal{
