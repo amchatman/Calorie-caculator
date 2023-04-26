@@ -616,6 +616,30 @@ li{
   display: none;
 }
 
+.h-px {
+  height: 1px;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -634,6 +658,10 @@ li{
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .bg-slate-800 {
@@ -743,11 +771,6 @@ li{
 
 .font-semibold {
   font-weight: 600;
-}
-
-.text-cyan-600 {
-  --tw-text-opacity: 1;
-  color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 
 .text-transparent {
