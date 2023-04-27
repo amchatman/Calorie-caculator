@@ -29,32 +29,32 @@
            <!--Graph Div goes Here--> 
            <canvas  id="myChart"> </canvas>
         </div>
-       <hr class="w-9/12 mt-5 mb-auto mx-auto bg-gradient-to-r from-cyan-500 to-blue-500 h-0.5 border-0">
         <section class="m-5 p-2 rounded">
             <!--Input list -->
             <div class="flex justify-center">
-                <button onclick="dropDownMenu()" class="bg-slate-800 text-emerald-300 rounded font-semibold px-6 py-2.5">Add Macronutrients</button>
+                <span  class="bg-gray-300 dark:bg-zinc-900 rounded font-semibold px-6 py-2.5">Add Macronutrients</span>
+                <button onclick="dropDownMenu()" class="bg-gray-300 dark:bg-zinc-900 rounded font-semibold w-11 mx-3 p-2 hover:text-teal-400">+</button>
             </div>
-            <form id="calorieForm" class="p-3 mt-3 bg-slate-800 rounded hidden">
+            <form id="calorieForm" class="p-3 mt-3 bg-gray-300 dark:bg-zinc-900 rounded hidden">
                 <div class="my-2.5">
                     <label for="name" class="block float-left w-28 text-sm">Description</label>
-                    <input type="text" name="name" placeholder="Name" id="description" class="clear-both bg-zinc-800 pl-2 py-1 text-sm"/>
+                    <input type="text" name="name" placeholder="Name" id="description" class="clear-both bg-zinc-200 dark:bg-zinc-800 pl-2 py-1 text-sm"/>
                 </div>
                 <div class="my-2.5">
                     <label for="calories" class="block float-left w-28 text-sm">Calories</label>
-                    <input type="number" name="calories" placeholder="0" min="0" id="calories" class="clear-both bg-zinc-800 pl-2 py-1 text-sm"/> 
+                    <input type="number" name="calories" placeholder="0" min="0" id="calories" class="clear-both bg-zinc-200 dark:bg-zinc-800 pl-2 py-1 text-sm"/> 
                 </div>
                 <div class="my-2.5">
                     <label for="carbs" class="block float-left w-28 text-sm">Carbs (g)</label>
-                    <input type="number" name="carbs" placeholder="0" id="carbs" min="0" class="clear-both bg-zinc-800 pl-2 py-1 text-sm"/> 
+                    <input type="number" name="carbs" placeholder="0" id="carbs" min="0" class="clear-both bg-zinc-200 dark:bg-zinc-800 pl-2 py-1 text-sm"/> 
                 </div>
                 <div class="my-2.5">
                     <label for="protein" class="block float-left w-28 text-sm">Protein (g)</label>
-                    <input type="number" name="protein" placeholder="0" id="protein" min="0" class="clear-both bg-zinc-800 pl-2 py-1 text-sm"/> 
+                    <input type="number" name="protein" placeholder="0" id="protein" min="0" class="clear-both bg-zinc-200 dark:bg-zinc-800 pl-2 py-1 text-sm"/> 
                 </div>
                 <div class="my-2.5">
                     <label for="fats" class="block float-left w-28 text-sm">Fats (g)</label>
-                    <input type="number" name="fats" placeholder="0" min="0" id="fats" class="clear-both bg-zinc-800 pl-2 py-1 text-sm"/> 
+                    <input type="number" name="fats" placeholder="0" min="0" id="fats" class="clear-both bg-zinc-200 dark:bg-zinc-800 pl-2 py-1 text-sm"/> 
                 </div>
                 <div>
                     <input type="submit" value="Add Meal" id="submitMeal" class="px-2 py-1 bg-slate-700 rounded"/>
@@ -62,7 +62,7 @@
                 </div>
             </form>
         </section>
-        <hr class="w-9/12 mt-5 mb-auto mx-auto bg-gradient-to-r from-cyan-500 to-blue-500 h-0.5 border-0">
+        <hr class="w-9/12 mt-5 mb-auto mx-auto bg-teal-400 h-0.5 border-0">
         <section id="meal-list"class="meal-list m-5 p-2 bg-slate-800 rounded">
             <h1 class="text-xl">Meal List</h1>
         </section>

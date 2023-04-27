@@ -45,7 +45,7 @@ const chartData = {
     label: '# grams',
     data: [totalCarbs, totalProtein, totalFats],
     borderWidth: 1,
-    backgroundColor: ['#06b6d4', '#3b82f6', '#22c55e']
+    backgroundColor: ['#2DD4BF', '#60A5FA', '#818CF8']
   }]
 };
 const ctx = document.getElementById('myChart');
