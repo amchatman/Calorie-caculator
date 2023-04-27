@@ -11,10 +11,10 @@
     <title>Calorie Caculator</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="font-display bg-slate-900 text-white">
+<body class="font-display bg-zinc-50 text-zinc-700 dark:bg-gray-950 dark:text-zinc-300">
    <header class="m-5">
-        <h1 class="font-sans font-medium text-center text-5xl bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Calorie Caculator</h1>
-        <p id="todayDate" class="text-center text-white"></p>
+        <h1 class="font-sans font-medium text-center text-5xl">Macronutrients Caculator</h1>
+        <p id="todayDate" class="text-center text-teal-400"></p>
    </header>
    <main>
         <div class="mt-0 mb-auto mx-5 text-sm">
@@ -24,8 +24,8 @@
             </p>
         </div>
 
-        <hr class="w-9/12 mt-5 mb-auto mx-auto bg-gradient-to-r from-cyan-500 to-blue-500 h-0.5 border-0">
-        <div class="flex justify-center bg-slate-800 m-5 p-2 rounded">
+        <hr class="w-9/12 mt-5 mb-auto mx-auto bg-teal-400 h-0.5 border-0">
+        <div class="flex justify-center bg-gray-300 dark:bg-zinc-900 m-5 p-2 rounded">
            <!--Graph Div goes Here--> 
            <canvas  id="myChart"> </canvas>
         </div>
