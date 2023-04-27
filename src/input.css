@@ -11,20 +11,16 @@
 }
 @layer utilities{
     .delete-meal{
-        border:2px solid white;
+        background-color:#2DD4BF;
+        padding:4px 8px 8px 4px;
+        border-radius:4px;
+        float:right;
     }
     .meal-container{
         padding:8px;
         margin-top:10px;
         margin-bottom:10px;
-        border-left:3px solid white;
-    }
-    .delete-meal{
-        padding-left:8px;
-        padding-right:8px;
-        padding-top:4px;
-        padding-bottom:4px;
-        float:right;
+        border-left:3px solid #2DD4BF;
     }
 }
 
