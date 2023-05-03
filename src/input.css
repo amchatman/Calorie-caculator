@@ -22,5 +22,18 @@
         margin-bottom:10px;
         border-left:3px solid #2DD4BF;
     }
+    .carbsList,.proteinList,.fatsList{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .carbsList{
+        color:#2DD4BF;
+    }
+    .proteinList{
+        color:#60A5FA;
+    }
+    .fatsList{
+        color:#818CF8;
+    }
 }
 

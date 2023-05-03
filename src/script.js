@@ -117,14 +117,17 @@ window.addEventListener('load',() => {
        unorder_List.appendChild(calorie_List);
 
       const carbs_List = document.createElement("li");
+      carbs_List.classList.add("carbsList");
       carbs_List.innerText = `Carbs:${carbsValue}`;
         unorder_List.appendChild(carbs_List);
 
       const protein_List = document.createElement("li");
+      protein_List.classList.add("proteinList");
       protein_List.innerText =`Protein:${proteinValue}`;
       unorder_List.appendChild(protein_List);
 
       const fats_List = document.createElement("li");
+      fats_List.classList.add("fatsList");
       fats_List.innerText = `Fats:${fatsValue}`;
       unorder_List.appendChild(fats_List);
 

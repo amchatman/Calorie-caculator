@@ -722,6 +722,11 @@ li{
   font-family: Roboto, sans-serif;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -735,16 +740,6 @@ li{
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-medium {
@@ -787,6 +782,23 @@ li{
   margin-top:10px;
   margin-bottom:10px;
   border-left:3px solid #2DD4BF;
+}
+
+.carbsList,.proteinList,.fatsList{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.carbsList{
+  color:#2DD4BF;
+}
+
+.proteinList{
+  color:#60A5FA;
+}
+
+.fatsList{
+  color:#818CF8;
 }
 
 .hover\:text-teal-400:hover {
