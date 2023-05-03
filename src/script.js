@@ -97,6 +97,9 @@ window.addEventListener('load',() => {
       totalFats += fatsValue;
       totalCarbs += carbsValue;
       updateChartTotal();
+
+      const calorieValueDisplay = calorieValue + "kcal";
+        document.getElementById('calorieTotalDisplay').innerHTML =calorieValueDisplay;
       
       //Creating Element with DOM
       const meal_Container = document.createElement("div");
