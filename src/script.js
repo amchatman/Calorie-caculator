@@ -64,7 +64,7 @@ function updateChartTotal(){
   myChart.update();
 }
 
-//Form loader
+//Input Form loader
 window.addEventListener('load',() => {
   const calorieForm = document.querySelector("#calorieForm");
   const inputDescription = document.querySelector("#description")
@@ -98,8 +98,9 @@ window.addEventListener('load',() => {
       totalCarbs += carbsValue;
       updateChartTotal();
 
-      const calorieValueDisplay = calorieValue + "kcal";
-        document.getElementById('calorieTotalDisplay').innerHTML =calorieValueDisplay;
+      //CalorieTotal Update display
+      let calorieValueDisplay = totalCalories + "kcal";
+        document.getElementById('calorieTotalDisplay').innerHTML= calorieValueDisplay;
       
       //Creating Element with DOM
       const meal_Container = document.createElement("div");
@@ -111,6 +112,7 @@ window.addEventListener('load',() => {
 
       const unorder_List = document.createElement("ul");
       const calorie_List = document.createElement("li");
+      calorie_List.classList.add("calorieList");
       calorie_List.innerText = `Calories:${calorieValue}`;
        unorder_List.appendChild(calorie_List);
 
