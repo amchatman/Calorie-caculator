@@ -99,7 +99,7 @@ window.addEventListener('load',() => {
       updateChartTotal();
 
       //CalorieTotal Update display
-      let calorieValueDisplay = totalCalories + "kcal";
+      let calorieValueDisplay = "🥬 " + totalCalories + "kcal";
         document.getElementById('calorieTotalDisplay').innerHTML= calorieValueDisplay;
       
       //Creating Element with DOM
