@@ -15,10 +15,13 @@ Project was created with the following technolgies...
 - JavaScript
 - <a href="https://tailwindcss.com/">TailwindCSS</a>
 - <a href="https://www.chartjs.org/">Charts.js</a> | <a href="https://github.com/chartjs/Chart.js">Chart.js Github</a>
+- <a href="https://emojis.github.io/">Emojis</a>
 
 ### Features
 - The ability to add or delete meals
-- The ability to track carbs,protein and fats
+- The ability add the total calories carbs,protein and fats
+- A chart that display the total carbs,protein,and fats.
 
 ### Issues
 - Chart does not caculate right total on delete
+- Chart does not delete when list has been deleted
