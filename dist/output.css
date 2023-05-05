@@ -617,6 +617,10 @@ li{
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -837,6 +841,18 @@ li{
 }
 
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:w-3\/6 {
     width: 50%;
   }
@@ -855,6 +871,10 @@ li{
 
   .sm\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .sm\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
   .sm\:text-base {
