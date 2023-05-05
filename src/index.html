@@ -18,7 +18,7 @@
    </header>
    <main>
         <div class="mt-0 mb-auto mx-5 text-sm">
-            <p class="text-sm text-center ">
+            <p class="text-sm text-center sm:text-base ">
                 Click on the Add Meal button to caculate the amount of calories you consume in a
                 a meal. Enter the meal description,calories,carbs,protein,and fats.
             </p>
@@ -27,10 +27,12 @@
         <hr class="w-9/12 mt-5 mb-auto mx-auto bg-teal-400 h-0.5 border-0">
         <!--CalorieTotal display-->
         <div id="calorieTotalDisplay" class="text-center text-3xl mt-4"></div>
-        <div class="flex justify-center bg-gray-300 dark:bg-zinc-900 m-5 p-2 rounded">
-           <!--Graph Div goes Here--> 
-           <canvas  id="myChart"> </canvas>
+
+        <!--Chart.js display-->
+        <div class="flex justify-center bg-gray-300 dark:bg-zinc-900 m-5 p-2 rounded sm:w-2/6">
+           <canvas id="myChart"> </canvas>
         </div>
+
         <section class="m-5 p-2 rounded">
             <!--Input list -->
             <div class="flex justify-center">
