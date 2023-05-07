@@ -19,7 +19,7 @@ Project was created with the following technolgies...
 
 ### Features
 - The ability to add or delete meals
-- The ability add the total calories carbs,protein and fats
+- The ability add the total calories, carbs,protein and fats
 - A chart that display the total carbs,protein,and fats.
 
 ### Issues
