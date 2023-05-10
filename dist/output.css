@@ -833,10 +833,6 @@ li{
 }
 
 @media (min-width: 640px) {
-  .sm\:float-right {
-    float: right;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -855,6 +851,10 @@ li{
 
   .sm\:flex-col {
     flex-direction: column;
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-base {
