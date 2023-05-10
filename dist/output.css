@@ -833,6 +833,10 @@ li{
 }
 
 @media (min-width: 640px) {
+  .sm\:float-right {
+    float: right;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -847,6 +851,10 @@ li{
 
   .sm\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:text-base {
