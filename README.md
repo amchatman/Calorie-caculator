@@ -1,4 +1,4 @@
-<h1 align="center">Calorie Caculator</h1>
+<h1 align="center">Macronutrients Caculator</h1>
 
 ## 📝 Summary 
 
@@ -21,7 +21,7 @@ Project was created with the following technolgies...
 - The ability to add or delete meals
 - The ability add the total calories, carbs,protein and fats
 - A chart that display the total carbs,protein,and fats.
+- Mobile and responsive design
 
 ### Issues
-- Chart does not caculate right total on delete
-- Chart does not delete when list has been deleted
+- Chart and calories do not update when meal list is completly deleted.
