@@ -564,8 +564,20 @@ li{
   clear: both;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-5 {
   margin: 1.25rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
 }
 
 .mx-3 {
@@ -611,6 +623,10 @@ li{
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .block {
@@ -675,6 +691,11 @@ li{
 .bg-zinc-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 .p-2 {
