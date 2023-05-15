@@ -1,8 +1,8 @@
-<h1 align="center">Macronutrients Caculator</h1>
+<h1 align="center">Macronutrients Calculator</h1>
 
 ## 📝 Summary 
 
-Calorie Caculator is a simple app that adds the total of calories,carbs,protein, and fats together. You can add meals to keep track of how many calories you eaten for the day.
+Macoronutrients Calculator is a simple app that adds the total of calories,carbs,protein, and fats together. You can add meals to keep track of how many calories you eaten for the day.
 
 <img src="https://img.shields.io/github/last-commit/amchatman/calorie-caculator?color=blue&style=flat">
 <img src="https://img.shields.io/badge/TailwindCSS-v3.3.1-blue">
