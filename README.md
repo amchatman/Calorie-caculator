@@ -6,19 +6,27 @@
 ## 📝 Summary 
 
 Macoronutrients Calculator is a simple app that adds the total of calories,carbs,protein, and fats together. You can add meals to keep track of how many calories you eaten for the day.
-
-<img src="https://img.shields.io/github/last-commit/amchatman/calorie-caculator?color=blue&style=flat">
-<img src="https://img.shields.io/badge/TailwindCSS-v3.3.2-blue">
-<img src="https://img.shields.io/badge/cdnjs-v4.2.1-blue">
+<div>
+    <img src="https://img.shields.io/github/last-commit/amchatman/calorie-caculator?color=blue&style=flat">
+    <img src="https://img.shields.io/badge/TailwindCSS-v3.3.2-blue">
+    <img src="https://img.shields.io/badge/cdnjs-v4.2.1-blue">
+</div>
+<hr>
 
 ### Technologies
-Project was created with the following technolgies...
+Project was created with the following technolgies
+
+Tech Stack
 - HTML5
 - CSS3
 - JavaScript
 - <a href="https://tailwindcss.com/">TailwindCSS</a>
+
+Graphic Editor
+- Affinity Designer
+
+Plugins
 - <a href="https://www.chartjs.org/">Charts.js</a> | <a href="https://github.com/chartjs/Chart.js">Chart.js Github</a>
-- <a href="https://emojis.github.io/">Emojis</a>
 
 ### Features
 - The ability to add or delete meals
