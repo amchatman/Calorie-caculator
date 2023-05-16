@@ -6,5 +6,9 @@
   },
   "dependencies": {
     "chart.js": "^4.2.1"
+  },
+  "scripts":{
+    "build": "tailwind --config tailwind.config.js"
   }
 }
+
