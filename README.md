@@ -1,3 +1,6 @@
+<p align="center">
+    <img src="img/macrologo.png" alt="" width="95px">
+</p>
 <h1 align="center">Macronutrients Calculator</h1>
 
 ## 📝 Summary 
